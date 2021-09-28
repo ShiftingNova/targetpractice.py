@@ -1,3 +1,9 @@
+### 
+### Author: Jordan Walker
+### Course: CSC 110
+### Description: This plots hit markers
+###              on a board of some kind.
+###
 def print_board(target_string, character):
     current_hit_x = int(target_string[0] + target_string[1])
     current_hit_y = int(target_string[2] + target_string[3])
@@ -22,9 +28,6 @@ def print_board(target_string, character):
             x+=1
         print()
         y-=1
-
-
-
 sequence = input("Hit string:\n")
 while not(len(sequence) > 3 and len(sequence)%4==0):
     print("Please provide a valid hit string.")
